@@ -77,7 +77,9 @@ Observable.from(Arrays.asList(strs))
 运行程序：
 
 ![运行结果](http://upload-images.jianshu.io/upload_images/2279594-c92425b80e17d822.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 是不是有点像高级for循环－.－  。
+
 4.操作符map，是用在observable和subcriber中间，是为了操作observable发射的数据，操作之后的数据，会被subcriber 接收。rxjava有很多操作符，map操作符是将一个事件转换为另一个事件的。
 
 ```
