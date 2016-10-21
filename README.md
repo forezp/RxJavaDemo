@@ -58,6 +58,7 @@ Observable.just("hi Rxjava2").subscribe(new Action1<String>() {
   }});
 ```
 运行程序：
+
 ![运行结果](http://upload-images.jianshu.io/upload_images/2279594-ea911afc524c4f35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 3.用from创建observable，这种方式创建，需要传入一个集合，它会一个一个的发射，在subscriber上它会一个一个的接收。
@@ -72,6 +73,7 @@ Observable.from(Arrays.asList(strs))
  }});
 ```
 运行程序：
+
 ![运行结果](http://upload-images.jianshu.io/upload_images/2279594-c92425b80e17d822.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 是不是有点像高级for循环－.－  。
 4.操作符map，是用在observable和subcriber中间，是为了操作observable发射的数据，操作之后的数据，会被subcriber 接收。rxjava有很多操作符，map操作符是将一个事件转换为另一个事件的。
@@ -91,7 +93,9 @@ Observable.just("hi rxjava")
 ```
 
 运行程序：
+
 ![运行结果](http://upload-images.jianshu.io/upload_images/2279594-ffb680d3ef2f5347.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 另外,map操作符可以将转换类型，比如string 转int .
 
 ```
@@ -161,6 +165,7 @@ Observable.create(new Observable.OnSubscribe<List<String>>() {
  }});
 ```
 运行程序：
+
 ![运行结果](http://upload-images.jianshu.io/upload_images/2279594-485551ccdee1c0ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 7.take操作符，固定返回数量。take(2)，返回2个结果。
@@ -191,6 +196,7 @@ Observable.create(new Observable.OnSubscribe<List<String>>() {
   }});
 ```
 运行程序：
+
 ![运行结果](http://upload-images.jianshu.io/upload_images/2279594-2f265edfc90d5640.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 rxjava中还有很多操作符，具体见[官网文档](http://reactivex.io/RxJava/javadoc/)和[中文文档](https://mcxiaoke.gitbooks.io/rxdocs/content/)，操作符可以让你对数据流做任何操作。多个操作符配合起来，可以让很复杂的逻辑变得简单，同时，在操作数据的过程中，subcriber并不需要知道中间做了那些操作，只需要知道返回的结果，操作数据也变的简单。
 [源码下载](https://github.com/forezp/RxJavaDemo)
