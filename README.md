@@ -1,5 +1,7 @@
 # RxJavaDemo
-Rxjava在目前的开发中已经是如火如荼，非常的流行，唯一的就是上手不太容易，学习成本高，学习rxjava有一段时间了，也看了[老罗的rxjava视频](http://www.apkbus.com/forum.php?mod=viewthread&tid=257703&extra=page%3D1%26filter%3Dauthor%26orderby%3Ddateline&_dsign=43e9b95f)，决定自己总结下。  
+Rxjava在目前的开发中已经是如火如荼，非常的流行，唯一的就是上手不太容易，学习成本高，学习rxjava有一段时间了，也看了[老罗的rxjava视频](http://www.apkbus.com/forum.php?mod=viewthread&tid=257703&extra=page%3D1%26filter%3Dauthor%26orderby%3Ddateline&_dsign=43e9b95f)，决定自己总结下。 
+
+另外欢迎star我的另一个项目,[瓣呀，一个基于豆瓣API模仿网易云音乐的开源app](https://github.com/forezp/banya) 
 ### 准备
 在android工程中的gradle.build中配置，为了更好的理解，所以导入java8 的lambda 表达式。
 
@@ -198,5 +200,7 @@ Observable.create(new Observable.OnSubscribe<List<String>>() {
 运行程序：
 
 ![运行结果](http://upload-images.jianshu.io/upload_images/2279594-2f265edfc90d5640.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 rxjava中还有很多操作符，具体见[官网文档](http://reactivex.io/RxJava/javadoc/)和[中文文档](https://mcxiaoke.gitbooks.io/rxdocs/content/)，操作符可以让你对数据流做任何操作。多个操作符配合起来，可以让很复杂的逻辑变得简单，同时，在操作数据的过程中，subcriber并不需要知道中间做了那些操作，只需要知道返回的结果，操作数据也变的简单。
+
 [源码下载](https://github.com/forezp/RxJavaDemo)
